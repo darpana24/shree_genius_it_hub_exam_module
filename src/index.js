@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 
 import reportWebVitals from './reportWebVitals';
-import Om from './components/admin_side/js/script';
+import Om from './components/admin_side/js/demo_onkar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
