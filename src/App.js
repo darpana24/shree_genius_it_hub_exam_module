@@ -1,13 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-import Body from "./components/user_side/js/Body"
+import React, { useState } from 'react';
+import LoginForm from './components/user_side/js/LoginForm';
 
 function App() {
   return (
     <div className="App">
-      <Body />
+      <LoginForm />
     </div>
   );
 }
 
 export default App;
+

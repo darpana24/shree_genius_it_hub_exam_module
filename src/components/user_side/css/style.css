@@ -1,0 +1,68 @@
+:root {
+  --brand-navy: #3E438C;   /* Main Brand Identity */
+  --brand-blue: #1C8BCC;   /* Action Color */
+  --brand-slate: #7B849B;  /* Neutral Balance */
+  --brand-mist: #C0E5F5;   /* Light Accent */
+  --brand-bg: #F9FAFA;     /* Page Background */
+  --white: #FFFFFF;
+  --sky-blue: #87CEEB;     /* Added sky blue */
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, var(--brand-mist), var(--sky-blue));
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--brand-bg);
+}
+
+.login-form, .register-form, .dashboard {
+  background: linear-gradient(135deg, var(--sky-blue), var(--brand-blue));
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  width: 300px;
+  color: var(--white);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid var(--brand-slate);
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: var(--white);
+  color: var(--brand-navy);
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: var(--brand-blue);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--sky-blue);
+  color: var(--brand-navy);
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: var(--white);
+  text-align: center;
+}
