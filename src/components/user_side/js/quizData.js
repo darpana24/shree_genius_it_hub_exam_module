@@ -1,4 +1,3 @@
-// src/components/user_side/js/quizData.js
 export const quizData = [
   // HTML
   { text: "What does HTML stand for?", options: ["Hyper Text Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language", "Hyper Tool Multi Language"], course: "HTML", correct: 0 },

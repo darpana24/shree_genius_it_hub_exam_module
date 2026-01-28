@@ -1,11 +1,10 @@
-// src/components/user_side/js/Question.js
 import React, { useState, useEffect } from "react";
 import Options from "./Options";
 
 const Question = ({ questions }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState({});
-  const [timeLeft, setTimeLeft] = useState(3600); // 1 hour
+  const [timeLeft, setTimeLeft] = useState(1800); 
   const [submitted, setSubmitted] = useState(false);
 
   // Timer countdown

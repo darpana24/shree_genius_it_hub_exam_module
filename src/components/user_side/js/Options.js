@@ -1,4 +1,3 @@
-// src/components/user_side/js/Options.js
 import React from "react";
 
 const Options = ({ options, selected, onSelect }) => {
