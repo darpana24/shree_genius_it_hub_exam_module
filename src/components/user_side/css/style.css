@@ -1,0 +1,145 @@
+/* =========================
+   Brand Color Variables
+   ========================= */
+:root {
+  --sky-light: #E6F7FF;     /* Very light sky blue background */
+  --box-bg: #FFFFFF;        /* White box background */
+  --box-border: #6A0DAD;    /* Purple border/accent */
+  --text-purple: #4B0082;   /* Dark purple text */
+  --option-bg: #E6F7FF;     /* Very light sky blue for options */
+  --option-text: #003366;   /* Dark blue text for options */
+  --button-blue: #1C8BCC;   /* Next button */
+  --button-green: #27AE60;  /* Submit button */
+  --button-gray: #7B849B;   /* Previous button */
+  --timer-red: #E74C3C;     /* Timer urgency */
+}
+
+/* =========================
+   Global Styles
+   ========================= */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--sky-light);   /* Light sky blue background */
+  color: var(--text-purple);            /* Dark purple text */
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   Exam Container
+   ========================= */
+.exam-container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: var(--box-bg);            /* White box */
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid var(--box-border);  /* Purple border */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  color: var(--text-purple);
+}
+
+/* =========================
+   Headings
+   ========================= */
+.exam-container h1,
+.exam-container h2,
+.exam-container h3 {
+  color: var(--text-purple);            /* Dark purple headings */
+  margin-bottom: 20px;
+}
+
+/* =========================
+   Question Text
+   ========================= */
+.question-text {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: var(--text-purple);            /* Dark purple text */
+}
+
+/* =========================
+   Options
+   ========================= */
+.options label {
+  display: block;
+  background: var(--option-bg);         /* Light sky blue */
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--option-text);            /* Dark blue text */
+}
+
+.options input[type="radio"] {
+  margin-right: 10px;
+}
+
+.options label:hover {
+  background: var(--button-blue);       /* Blue highlight on hover */
+  color: #FFFFFF;                       /* White text on hover */
+}
+
+/* =========================
+   Buttons
+   ========================= */
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+  color: #FFFFFF;
+}
+
+.button-group button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.button-group button:nth-child(1) {
+  background: var(--button-blue);       /* Previous */
+}
+
+.button-group button:nth-child(2) {
+  background: var(--button-blue);       /* Next */
+}
+
+.button-group button:nth-child(3) {
+  background: var(--button-green);      /* Submit */
+}
+
+.button-group button:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+/* =========================
+   Timer
+   ========================= */
+.timer {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  text-align: right;
+  color: var(--timer-red);              /* Red urgency */
+  font-weight: bold;
+}
+
+/* =========================
+   Submitted View
+   ========================= */
+.submitted {
+  text-align: center;
+}
+
+.submitted h2 {
+  color: var(--button-green);           /* Green for success */
+}
