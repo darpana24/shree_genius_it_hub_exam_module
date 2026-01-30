@@ -1,3 +1,14 @@
+
+import React from 'react';
+import StudentTable from './StudentTable';
+
+function App() {
+  return (
+    <div>
+      <StudentTable />
+    </div>
+  );
+=======
 import React, { useState } from 'react';
 import './App.css';
 import Sidebar from './components/user_side/js/Sidebar';
@@ -99,6 +110,7 @@ function App() {
             </div>
         </div>
     );
+ main
 }
 
 export default App;
