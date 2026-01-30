@@ -1,3 +1,9 @@
+
+.App {
+  text-align: center;
+   background-color: white; 
+  min-height: 100vh;
+=======
 /* --- Root Variables from Original File --- */
 :root {
     --primary: #0056b3;
@@ -8,6 +14,7 @@
     --text-light: #64748b;
     --border: #e2e8f0;
     --danger: #ef4444;
+
 }
 
 /* --- Base Styles --- */
@@ -80,6 +87,18 @@ body {
     }
 }
 
+
+.App-header {
+  background-color:rgb(175, 226, 252);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color:black;
+  padding:20px;
+=======
 /* --- Utilities --- */
 .flex { display: flex; }
 .flex-col { flex-direction: column; }
@@ -164,6 +183,7 @@ input:focus { border-color: var(--primary); }
     background-color: #e3f2fd; 
     color: var(--primary); 
     border-right: 3px solid var(--primary); 
+
 }
 
 .header { 
