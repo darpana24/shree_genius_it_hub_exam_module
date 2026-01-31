@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #a9d9f3;
+}
+
+.setup,
+.app {
+    padding: 2rem;
+}
+
+button {
+    padding: 0.6rem 1rem;
+    margin: 0.3rem;
+    cursor: pointer;
+}
+
+.active {
+    background: #4f46e5;
+    color: rgb(231, 206, 206);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timer {
+    padding: 0.5rem 1rem;
+    background: #da1d1d;
+    border-radius: 20px;
+}
+
+.warning {
+    background: #fef3c7;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.question {
+    background: rgb(235, 241, 241);
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.option {
+    border: 1px solid #353131;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.selected {
+    background: #e0e7ff;
+    border-color: #4c45c5;
+}
+
+.correct {
+    color: rgb(31, 124, 31);
+}
+
+.incorrect {
+    color: red;
+}
+
+.palette {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+}
+
+.dot {
+    padding: 0.5rem;
+    background: #eee;
+    text-align: center;
+    cursor: pointer;
+}
+
+.answered {
+    background: #0f6b2c;
+    color: white;
+}
+
+.visited {
+    background: #eaecef;
+}
+
+.active {
+    outline: 2px solid #3e38ae;
+    color: rgb(26, 16, 16);
+}
+
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(172, 198, 213, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+}
