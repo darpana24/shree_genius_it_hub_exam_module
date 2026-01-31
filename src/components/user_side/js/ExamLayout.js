@@ -14,8 +14,8 @@ export default function ExamLayout({ mode }) {
   const [visited, setVisited] = useState(new Set([0]));
  // const [time, setTime] = useState(mode === "practice" ? 3600 : 1200);
   const [submitted, setSubmitted] = useState(false);
-const PRACTICE_TIME = 40 * 60; // 20 minutes
-const FINAL_TIME = 20 * 60;   // 30 minutes
+const PRACTICE_TIME = 40 * 60; 
+const FINAL_TIME = 20 * 60;   
 const [time, setTime] = useState(
   mode === "practice" ? PRACTICE_TIME : FINAL_TIME
 );
