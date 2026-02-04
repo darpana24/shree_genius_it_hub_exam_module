@@ -1,13 +1,14 @@
 import React from 'react';
 import Logo from "../images/logo.jpeg";
 
-import { LayoutDashboard, Clock, PlayCircle } from 'lucide-react';
+import { LayoutDashboard, Clock, PlayCircle, FileText } from 'lucide-react';
 
 const Sidebar = ({ activeTab, setActiveTab, isOpen, closeSidebar }) => {
     const menuItems = [
         { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
         { id: 'schedule', label: 'Exam Schedule', icon: Clock },
         { id: 'test', label: 'Start Test', icon: PlayCircle },
+        { id: 'marksheet', label: 'Marksheet', icon: FileText },
     ];
 
     return (

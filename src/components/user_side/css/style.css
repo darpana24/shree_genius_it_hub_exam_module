@@ -1,0 +1,249 @@
+body {
+  background: linear-gradient(to right, #88c9e8, #97dcfb);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Apply flexbox centering only when login is shown */
+body:has(.container) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  width: 320px;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container .logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+button {
+  width: 95%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #667eea;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.back {
+  background: gray;
+}
+
+.link {
+  color: blue;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Exam Component Styles */
+.app {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* SetupScreen Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.setup .option {
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: white;
+}
+
+.setup .option:hover {
+  border-color: #007bff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: #05366a;
+}
+
+.setup .option.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.setup .option h3 {
+  margin: 0 0 0.5rem 0;
+  color: inherit;
+}
+
+.setup .option p {
+  margin: 0;
+  color: inherit;
+  opacity: 0.8;
+}
+
+.start-btn {
+  background: #28a745;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.start-btn:hover {
+  background: #218838;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.question {
+  background: rgb(235, 241, 241);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.option {
+  border: 1px solid #353131;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.option:hover {
+  background: #f0f0f0;
+}
+
+.selected {
+  background: #e0e7ff;
+  border-color: #4c45c5;
+}
+
+.correct {
+  color: rgb(31, 124, 31);
+  font-weight: bold;
+}
+
+.incorrect {
+  color: red;
+  font-weight: bold;
+}
+
+.palette {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+}
+
+.dot {
+  padding: 0.5rem;
+  background: #eee;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.answered {
+  background: #0f6b2c;
+  color: white;
+}
+
+.visited {
+  background: #eaecef;
+}
+
+.active {
+  outline: 2px solid #3e38ae;
+  color: rgb(26, 16, 16);
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(172, 198, 213, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.nav button {
+  width: auto;
+  padding: 0.75rem 1.5rem;
+  margin: 0;
+}
+
+/* Footer Styles */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+  z-index: 1000;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-content span {
+  white-space: nowrap;
+}
